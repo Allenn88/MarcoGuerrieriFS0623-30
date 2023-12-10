@@ -1,0 +1,110 @@
+body{
+    background-image: url("../assets/Coffee_Background_Image.jpg");
+    background-size: 100%;
+}
+header{
+    flex-direction: row;
+    justify-content: center;
+}
+header h1{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 55px;
+}
+h2{
+    text-align: center;
+    color: whitesmoke;  
+}
+.ionicon{
+    font-size: 55px;
+    color: whitesmoke;
+}
+#productList{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    padding: 25px;
+}
+.productLineList{
+    border: 2px solid black;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5%;
+    box-shadow: inset -3px -3px 16px 0px rgba(0, 68, 128, 0.814);
+    text-align: center;
+    background-color: whitesmoke;
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+}
+button{
+    background-color:  #ffff00;
+    font-weight: bold;
+    width: 10%;
+    height: auto;
+    padding: 20px;
+    margin-left: 8.5%;
+    font-size: 10px;
+    font-family: Outfit;
+    border: 2px solid rgb(0, 0, 0);
+}
+button:hover{
+    box-shadow: #1eff00 0px -25px 5px -40px inset,#1eff00 0 1px 25px,#1eff00 0 1px 1px,#1eff00 0 1px 1px,#1eff00 0 1px 1px,#1eff00 0 1px 1px;
+}
+#scopriBtn{
+    height: 50%;
+    width: 50%;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    box-shadow: inset #00FFFF 0px -25px 5px -40px inset,#00FFFF 1px 25px, #00FFFF 0 1px 1px,#00FFFF 0 1px 1px,#00FFFF 0 1px 1px,#00FFFF 0 1px 1px;
+}
+#scopriBtn:hover{
+    box-shadow: #00FFFF 0px -25px 5px -40px inset,#00FFFF 0 1px 25px,#00FFFF 0 1px 1px,#00FFFF 0 1px 1px,#00FFFF 0 1px 1px,#00FFFF 0 1px 1px;
+}
+#editBtn{
+    height: 50%;
+    width: 50%;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    box-shadow: inset #00FFFF 0px -25px 5px -40px inset,#00FFFF 1px 25px, #00FFFF 0 1px 1px,#00FFFF 0 1px 1px,#00FFFF 0 1px 1px,#00FFFF 0 1px 1px;
+}
+.conteinerbtn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    #productList {
+        padding: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .productLineList {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #productList {
+        padding: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .productLineList {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/back-office-style.css">
+    <title>Back Office</title>
+</head>
+<header>
+    <h1>Back Office - Gestione Proditti</h1>
+</header>
+<body>
+
+<h2>Nuovo Prodotto</h2>
+<div class="contenitoreform">
+<form id="productForm">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" required>
+
+    <label for="description">Descrizione:</label>
+    <input type="text" id="description">
+
+    <label for="brand">Brand:</label>
+    <input type="text" id="brand">
+
+    <label for="imageUrl">URL Immagine:</label>
+    <input type="text" id="imageUrl">
+
+    <label for="price">Prezzo:</label>
+    <input type="number" id="price" required>
+
+    <button type="button" onclick="createProduct()">Aggiungi Prodotto</button>
+</form>
+</div>
+<div id="modal" style="display: none;">
+    <h2>Modifica Prodotto</h2>
+    <form id="editProductForm">
+        <label for="editProductName">Nuovo Nome:</label>
+        <input type="text" id="editProductName">
+
+        <label for="editProductDescription">Nuova Descrizione:</label>
+        <input type="text" id="editProductDescription">
+
+        <label for="editProductPrice">Nuovo Prezzo:</label>
+        <input type="number" id="editProductPrice">
+
+        <label for="editProductImage">Nuova URL Immagine:</label>
+        <input type="text" id="editProductImage">
+
+        <button type="button" onclick="saveChanges()">Salva Modifiche</button>
+        <button type="button" onclick="closeModal()">Annulla</button>
+    </form>
+</div>
+
+
+<table id="productTable">
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Prezzo</th>
+        <th>Azioni</th>
+    </tr>
+</table>
+
+
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
